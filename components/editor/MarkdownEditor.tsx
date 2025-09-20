@@ -23,7 +23,7 @@ export function MarkdownEditor({ initialValue = "", onChange }: MarkdownEditorPr
 
   return (
     <Textarea
-      className="min-h-[500px] font-mono resize-none p-4 focus-visible:ring-1"
+      className="min-h-[500px] h-full font-mono resize-none p-4 focus-visible:ring-1 overflow-y-auto"
       placeholder="Write your markdown here..."
       value={value}
       onChange={handleChange}
